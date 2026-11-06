@@ -1,0 +1,229 @@
+hola. estás dentro.
+
+esto es un escape room: cinco puertas, una salida.
+
+cómo leer las instrucciones:
+  - lo que está entre corchetes es una tecla. [Esc] es la tecla Esc.
+    no escribas los corchetes.
+  - haz los pasos en orden, uno por uno.
+  - si te pierdes: presiona [Esc]. siempre te regresa.
+
+
+=== puerta1 · aquí las teclas mandan ===
+
+en vim, las teclas no escriben: dan órdenes.
+para escribir, primero tienes que pedirlo.
+
+calentamiento:
+  1. con las flechas, pon el cursor sobre esta letra →  X
+  2. presiona [x]. la X se borra.
+  3. presiona [u]. la X regresa. la u deshace.
+
+tu misión: escribe tu nombre en la línea "nombre:" de abajo.
+  1. con las flechas, baja hasta la línea "nombre:".
+  2. presiona [i]. abajo a la izquierda aparece -- INSERT --
+     (o -- INSERTAR --). ahora sí puedes escribir.
+  3. con la flecha derecha, ve al final de la línea.
+  4. escribe tu nombre.
+  5. presiona [Esc]. el -- INSERT -- desaparece.
+  6. escribe /puerta2 y presiona [Enter].
+     (verás el texto abajo a la izquierda. vim te lleva a la puerta 2.)
+
+nombre: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== puerta2 · la llave ===
+
+la encontraste. la / sirve para buscar.
+
+la llave es: despacio
+
+tu misión: escribe la llave en la línea "llave:" de abajo.
+  1. con las flechas, baja hasta la línea "llave:".
+  2. presiona [i].
+  3. con la flecha derecha, ve al final de la línea.
+  4. escribe: despacio
+  5. presiona [Esc].
+
+llave: 
+
+
+=== puerta3 · lo que no guardas, no existió ===
+
+lo que escribiste todavía no está guardado.
+
+tu misión: guardar.
+  1. presiona [Esc] (por si acaso).
+  2. escribe :w y presiona [Enter].
+     los dos puntos abren una línea abajo: ahí le das órdenes a vim.
+     abajo aparece un mensaje: el archivo se guardó.
+  3. con las flechas, baja a la puerta 4.
+
+
+=== puerta4 · la trampa ===
+
+tu misión:
+  1. baja hasta la línea "trampa:".
+  2. presiona [i], ve al final de la línea, escribe: trampa
+  3. presiona [Esc].
+
+trampa: 
+
+era una trampa. ahora tienes que salir sin guardar.
+
+  4. escribe :q y presiona [Enter].
+     vim no te deja salir: abajo aparece un error (E37).
+     tienes algo sin guardar y vim no lo suelta.
+  5. escribe :q! y presiona [Enter].
+     el ! significa "estoy seguro". sales de vim sin guardar.
+  6. ya estás en la terminal. escribe: vim escape.txt
+     y presiona [Enter] para volver a entrar.
+  7. tu nombre y tu llave siguen aquí. la trampa, no.
+  8. presiona [G] (mayúscula) para saltar al final del archivo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== puerta5 · la salida ===
+
+tu misión: salir.
+  1. presiona [i], ve al final de la línea "salida:", escribe: salgo
+  2. presiona [Esc].
+  3. escribe :wq y presiona [Enter]. guarda y sale, de un golpe.
+  4. ya en la terminal, escribe: bash check.sh
+
+salida: 
